@@ -1,0 +1,31 @@
+let num = 13;
+
+let stringNum = String(num);
+
+console.log(stringNum);
+console.log(typeof(stringNum))
+
+// "33"  => 33
+// "33ob" => Nan
+// truen = > 1 : false = 0
+// null => 0
+// undefined => Nan
+
+let isLogged =  true;
+
+let numIsLogged = Number(isLogged);
+console.log(numIsLogged);
+console.log(typeof numIsLogged)
+
+let IsTrue = 1
+
+let IsTrueB  = Boolean(IsTrue);
+console.log(IsTrueB);
+console.log(typeof IsTrueB); // 1 -> tue , 0 -> false / "" -> empty string false , "Vivek" - > true
+
+console.log("10" - 5)
+
+console.log("12"+3);  // concate the string 
+
+console.log(5 == "5"); // loosse equality  - true
+console.log(0 === false);   // strict equality  - false
