@@ -1,0 +1,31 @@
+// memory has 2 types to store
+// 1. Stack Memory (Primitive) - All number string etc comes in this
+// 2. Heap Memory (Non Primitive) - Array , Obj , Function comes in this to store
+
+let name = "Vivek Khedkar"
+
+let anotherName = name ;
+
+anotherName = "Vivekk" // when value change from stack it give us a copy of that variable data not actual data so if we change in this not impact real datat
+
+console.log(name); // Vivek Khedkar
+console.log(anotherName);  //Vivekk
+
+
+let user = {
+    email:"vivek@gmail.com",
+    id:1
+} // this user store in Stack But that {} inside all store in heap so user get original referance from the heap memory
+
+let user2 = user ;
+console.log(user);
+
+user2.email="Vivekk@google.com";
+
+console.log(user); // now because it use original referance not a copy change from anywhere impacts a that original data 
+console.log(user2);
+
+//{ email: 'vivek@gmail.com', id: 1 }
+// { email: 'Vivekk@google.com', id: 1 }
+// { email: 'Vivekk@google.com', id: 1 }
+
