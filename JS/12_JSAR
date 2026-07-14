@@ -1,0 +1,18 @@
+let num = [3,4,7,5,8,2];
+const tr = 2 ;
+let found  = 0 ;
+
+for(let i  = 0 ;i<num.length ; i++){
+
+    if(num[i]=== tr){
+        console.log(`Target present at index ${i+1} : Value : ${num[i]}`);
+        found = 1;
+        break;
+    }
+   
+
+}
+ if(found==0){
+        console.log("No element found");
+
+    }
